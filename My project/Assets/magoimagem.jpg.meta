@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f60acf6ce48f6604e88d34a031cd87a3
+guid: 783d712f32b5e994fa63a746420e0bdc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1171790437229086565
-    second: pngegg_0
+      213: -3119885077676139531
+    second: magoimagem_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pngegg_0
+      name: magoimagem_0
       rect:
         serializedVersion: 2
-        x: 39
-        y: 29
-        width: 762
-        height: 562
+        x: 0
+        y: 0
+        width: 720
+        height: 720
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b98b2c54ec6fcbfe0800000000000000
-      internalID: -1171790437229086565
+      spriteID: 5fb521d3d01f3b4d0800000000000000
+      internalID: -3119885077676139531
       vertices: []
       indices: 
       edges: []

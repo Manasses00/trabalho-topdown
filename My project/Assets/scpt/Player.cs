@@ -13,10 +13,13 @@ public class Player : MonoBehaviour
 
     private Rigidbody2D rb;
     private Vector2 direcao;
+    private SpriteRenderer spriteRenderer;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+
         vidaAtual = vidaMaxima;
         AtualizarHUD();
     }
@@ -26,6 +29,13 @@ public class Player : MonoBehaviour
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
         direcao = new Vector2(moveX, moveY).normalized;
+
+        // --- Flip corrigido (se seu sprite está ao contrário) ---
+        if (moveX > 0)
+            spriteRenderer.flipX = true;     // olha para a direita
+        else if (moveX < 0)
+            spriteRenderer.flipX = false;    // olha para a esquerda
+
         AtualizarHUD();
     }
 
@@ -50,7 +60,6 @@ public class Player : MonoBehaviour
 
     void Morrer()
     {
-        // Aqui você pode adicionar animação ou efeitos antes de destruir
         Destroy(gameObject);
     }
 

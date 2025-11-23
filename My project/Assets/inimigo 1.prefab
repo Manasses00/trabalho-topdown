@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7996842998848809407}
   - component: {fileID: 1839840736717177985}
   m_Layer: 0
-  m_Name: inimigo
+  m_Name: inimigo 1
   m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 3530875879431529950, guid: f5db3f7b71ca3e44bac71ecac889abbd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.42547444, g: 0.42341578, b: 0.5188679, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -103,12 +103,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d18fd7c12526a84f8352baa8fce87f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidade: 5
-  raioDeteccao: 10
-  vidaMaxima: 20
-  vidaAtual: 20
-  dano: 15
-  pontosAoMorrer: 15
+  velocidade: 2
+  raioDeteccao: 5
+  vidaMaxima: 50
+  vidaAtual: 0
+  dano: 10
+  pontosAoMorrer: 10
   barraVida: {fileID: 322364534519325707}
 --- !u!61 &7996842998848809407
 BoxCollider2D:
